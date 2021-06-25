@@ -1,0 +1,32 @@
+<html>
+    <head>
+    <title>Web App – Simple Interest Calculator</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="div1" class="container">
+        <h1 class="text-center">Simple Interest Calculator</h1>
+        <form id="form1">
+           
+
+                <div class="div_container"><label for="amount">Amount</label> 
+                <input class="field" type="number" min="0" id="amount" required> </div>
+
+                <div class="div_container" id="div_slider"><label for="rate" id="label_rate">Interest Rate</label>
+                <input class="field" type="range" min="0" max="100" value="10" step="0.5" id="rate" oninput="computePercentage()"></div>
+
+                <div class="div_container"><label for="years">No. of Years</label>
+                <select class="field" id="years"></select> </div>
+
+                <button type= "button" onclick="compute()">Compute Interest</button>
+               
+        </form>
+        <footer>
+            <p id="p1">&copy; Every One Can Get Rich</p>
+        </footer>
+        </div>
+    
+        
+    </body>
+</html>
